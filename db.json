@@ -1,0 +1,109 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Lunch Bag Blue 5L",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
+      "imageUrl": "./assets/images/5liter-blue.jpg",
+      "price": 286
+    },
+    {
+      "id": 2,
+      "name": "Lunch Bag Black 5L",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
+      "imageUrl": "./assets/images/5liter-black.jpg",
+      "price": 273
+    },
+    {
+      "id": 3,
+      "name": "Lunch Bag Fuchsia 5L",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
+      "imageUrl": "./assets/images/5liter-fuchsia.jpg",
+      "price": 248
+    },
+    {
+      "id": 4,
+      "name": "Lunch Bag Gray 5L",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
+      "imageUrl": "./assets/images/5liter-gray.jpg",
+      "price": 253
+    },
+    {
+      "id": 5,
+      "name": "Lunch Bag Red 5L",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
+      "imageUrl": "./assets/images/5liter-red.jpg",
+      "price": 275
+    }
+  ],
+  "wishlist": [],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "cart": [
+    {
+      "product": {
+        "id": 3,
+        "name": "Lunch Bag Fuchsia 5L",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
+        "imageUrl": "./assets/images/5liter-fuchsia.jpg",
+        "price": 248
+      },
+      "id": 1
+    },
+    {
+      "product": {
+        "id": 3,
+        "name": "Lunch Bag Fuchsia 5L",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
+        "imageUrl": "./assets/images/5liter-fuchsia.jpg",
+        "price": 248
+      },
+      "id": 2
+    },
+    {
+      "product": {
+        "id": 2,
+        "name": "Lunch Bag Darkblue 5L",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
+        "imageUrl": "./assets/images/5liter-darkblue.jpg",
+        "price": 273
+      },
+      "id": 3
+    },
+    {
+      "product": {
+        "id": 2,
+        "name": "Lunch Bag Black 5L",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
+        "imageUrl": "./assets/images/5liter-black.jpg",
+        "price": 273
+      },
+      "id": 4
+    },
+    {
+      "product": {
+        "id": 5,
+        "name": "Lunch Bag Red 5L",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
+        "imageUrl": "./assets/images/5liter-red.jpg",
+        "price": 275
+      },
+      "id": 5
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

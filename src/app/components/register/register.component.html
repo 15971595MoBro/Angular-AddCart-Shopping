@@ -1,0 +1,119 @@
+<div class="row">
+  <div class="col-md-4 offset-md-4">
+    <div class="guest-form-card card">
+      <div class="card-header text-center">
+        <h3>Register</h3>
+      </div>
+      <div class="card-body">
+        <form [formGroup]="registerForm" (ngSubmit)="register()">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              class="form-control"
+              [ngClass]="{
+                'is-invalid':
+                  registerForm.get('name').touched &&
+                  registerForm.get('name').invalid
+              }"
+              formControlName="name"
+            />
+
+            <span class="invalid-feedback">Name can't be blank.</span>
+          </div>
+          <div class="form-group mt-3">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              class="form-control"
+              [ngClass]="{
+                'is-invalid':
+                  registerForm.get('email').touched &&
+                  registerForm.get('email').invalid
+              }"
+              formControlName="email"
+            />
+            <span
+              class="invalid-feedback"
+              *ngIf="registerForm.get('email').hasError('required')"
+              >Email can't be blank.</span
+            >
+            <span
+              class="invalid-feedback"
+              *ngIf="registerForm.get('email').hasError('email')"
+              >Email must be valid.</span
+            >
+          </div>
+          <div class="form-group mt-3">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              id="username"
+              class="form-control"
+              [ngClass]="{
+                'is-invalid':
+                  registerForm.get('username').touched &&
+                  registerForm.get('username').invalid
+              }"
+              formControlName="username"
+            />
+            <span class="invalid-feedback">Username can't be blank.</span>
+          </div>
+
+          <div class="form-group mt-3">
+            <label for="passowrd">Password</label>
+            <input
+              type="password"
+              id="password"
+              class="form-control"
+              [ngClass]="{
+                'is-invalid':
+                  registerForm.get('password').touched &&
+                  registerForm.get('password').invalid
+              }"
+              formControlName="password"
+            />
+            <span class="invalid-feedback">
+              <span *ngIf="registerForm.get('password').hasError('required')"
+                >Password can't be blanck.</span
+              >
+              <span *ngIf="registerForm.get('password').hasError('symbol')"
+                >Password must contain @ or ! or # or $ or &</span
+              >
+              <span *ngIf="registerForm.get('password').hasError('minlength')"
+                >Password must contain minimum 4 characters</span
+              >
+            </span>
+          </div>
+
+          <!-- {{ registerForm.get("password").errors | json }} -->
+
+          <div class="form-group mt-3">
+            <label for="confirmPassowrd">Confirm Password</label>
+            <input
+              type="password"
+              id="confirmPassword"
+              class="form-control"
+              [ngClass]="{
+                'is-invalid':
+                  registerForm.get('confirmPassword').touched &&
+                  registerForm.get('confirmPassword').invalid
+              }"
+              formControlName="confirmPassword"
+            />
+            <span class="invalid-feedback">Passowrds must match</span>
+          </div>
+
+          <button
+            class="btn btn-primary mt-3 btn-block"
+            [disabled]="registerForm.invalid"
+          >
+            Register
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

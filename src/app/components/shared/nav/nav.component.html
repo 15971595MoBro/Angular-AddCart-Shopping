@@ -1,0 +1,21 @@
+<div
+  class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom"
+>
+  <app-header></app-header>
+  <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+    <a class="me-3 py-2 text-dark text-decoration-none" [routerLink]="['/shop']"
+      >Shop</a
+    >
+    <a class="me-3 py-2 text-dark text-decoration-none" href="#">Enterprise</a>
+    <a class="me-3 py-2 text-dark text-decoration-none" href="#">Support</a>
+    <a class="me-3 py-2 text-dark text-decoration-none" href="#">Pricing</a>
+    <a [routerLink]="['/register']" class="py-2 me-3 mt-1 btn btn-primary"
+      >Sign up</a
+    >
+    <a
+      [routerLink]="['/login']"
+      class="py-2 me-3 mt-1 btn btn-outline-secondary"
+      >Login</a
+    >
+  </nav>
+</div>
